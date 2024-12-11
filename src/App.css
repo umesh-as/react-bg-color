@@ -1,0 +1,95 @@
+/* Set the body and html to ensure full screen */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Make sure the App container takes up the full screen */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Ensures the content takes up at least the full height of the viewport */
+  width: 100%;  /* Ensures the App container takes the full width */
+  text-align: center;
+  transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+/* Center the title */
+h1 {
+  margin-bottom: 30px;
+  color: white; /* White text color to contrast with background */
+}
+
+/* Style for the button container */
+.button-container {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  gap: 20px; /* Space between buttons */
+  width: 100%;  /* Make button container full width */
+  max-width: 600px; /* Limit the width for better visual appearance */
+}
+
+/* General button styles */
+button {
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: #333;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect for each button */
+button:hover {
+  color: white; /* Text color change on hover */
+  transform: scale(1.1); /* Slightly enlarge the button */
+}
+
+/* Specific colors for buttons */
+button.red {
+  background-color: red;
+}
+
+button.red:hover {
+  background-color: #b30000; /* Darker red on hover */
+}
+
+button.blue {
+  background-color: blue;
+}
+
+button.blue:hover {
+  background-color: #1e3bb2; /* Darker blue on hover */
+}
+
+button.green {
+  background-color: green;
+}
+
+button.green:hover {
+  background-color: #006400; /* Darker green on hover */
+}
+
+button.yellow {
+  background-color: yellow;
+}
+
+button.yellow:hover {
+  background-color: #cc9900; /* Darker yellow on hover */
+}
+
+/* Active button effect (on click) */
+button:active {
+  transform: scale(0.9); /* Slightly shrink the button when clicked */
+}
+
+/* Focus effect to remove default outline */
+button:focus {
+  outline: none;
+}
